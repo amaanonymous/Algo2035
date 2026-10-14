@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&family=Roboto+Mono&family=Inter:wght@300..800&display=swap" rel="stylesheet">
+<title>Algorithm 2035 · Adaptive Algorithm Selection for Smart Cities</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<link rel="stylesheet" href="css/base/reset-and-root.css">
+<link rel="stylesheet" href="css/layout/rail-and-page.css">
+<link rel="stylesheet" href="css/components/intro.css">
+<link rel="stylesheet" href="css/components/buttons.css">
+<link rel="stylesheet" href="css/sections/hero.css">
+<link rel="stylesheet" href="css/components/reveal-stats-tiles.css">
+<link rel="stylesheet" href="css/layout/sections-and-cards.css">
+<link rel="stylesheet" href="css/components/controls-and-sims.css">
+<link rel="stylesheet" href="css/layout/responsive.css">
+<link rel="stylesheet" href="css/themes/gold.css">
+<link rel="stylesheet" href="css/themes/google.css">
+<link rel="stylesheet" href="css/themes/premium.css">
+<link rel="stylesheet" href="css/sections/city-impact.css">
+<link rel="stylesheet" href="css/sections/feasibility-selector.css">
+<link rel="stylesheet" href="css/themes/reveal-tuning.css">
+<link rel="stylesheet" href="css/sections/intro-eyebrow.css">
+</head><body>
+<div id="prog"></div><canvas id="bg"></canvas><nav class="rail"><a class="mark" href="#/home">A35</a><div class="links"><a class="dest" data-go="home" href="#/home"><span class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 11.5 12 5l8 6.5V20h-5v-5H9v5H4z" stroke-linejoin="round"/></svg></span>Home</a><a class="dest" data-go="m1" href="#/m1"><span class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="5" cy="17" r="2.2"/><circle cx="12" cy="6" r="2.2"/><circle cx="19" cy="15" r="2.2"/><path d="M6.4 15.3 10.8 7.8M13.6 7.3l4.2 6"/></svg></span>Roads</a><a class="dest" data-go="m2" href="#/m2"><span class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" stroke-linejoin="round"/></svg></span>Zones</a><a class="dest" data-go="m3" href="#/m3"><span class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M12 7v10M9.5 9.5h4a1.7 1.7 0 0 1 0 3.4h-3a1.7 1.7 0 0 0 0 3.4h4.5" stroke-linecap="round"/></svg></span>Budget</a><a class="dest" data-go="m4" href="#/m4"><span class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="6" rx="7" ry="2.6"/><path d="M5 6v12c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6V6M5 12c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6"/></svg></span>Data</a><a class="dest" data-go="m5" href="#/m5"><span class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19h16M5 19 4 8l5 4 3-6 3 6 5-4-1 11" stroke-linejoin="round"/></svg></span>Puzzle</a><a class="dest" data-go="m6" href="#/m6"><span class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 20V11M12 20V5M19 20v-7" stroke-linecap="round"/></svg></span>Limits</a></div><button class="mt" id="mt" title="Turn animations on or off"><span class="sw2"></span>Motion</button></nav><div id="intro"><div id="igrid"></div><div class="ieye"><i></i><span>Design and Analysis of Algorithms</span><em></em><b>Assignment 1</b></div>
+<h1 class="ititle" id="it" aria-label="Algorithm 2035"></h1><p class="isub">An adaptive framework for smart cities: it reads a request, picks the right DAA technique, runs it live and explains why.</p>
+<div class="icta"><button class="btn primary" id="enter">Enter Algorithm 2035</button></div></div><main class="page"><div class="pg" id="p-home"><div class="hero"><div><span class="chip">Smart City Framework · 2035</span>
+<h1 class="display sp reveal">One city, many problems, <span>the right algorithm</span> for each.</h1>
+<p class="lede reveal">Algorithm 2035 turns a city request into a model, selects a DAA technique, runs it step by step and shows time and space complexity.</p>
+<div class="ctas reveal"><a class="btn primary" href="#/m1">Start with Module 1</a><a class="btn tonal" href="#flow" onclick="document.getElementById('flow').scrollIntoView({behavior:'smooth'});return false">How it works</a></div></div><div></div></div>
+<div class="vrow"><div id="v0"><span>Prim</span><span>Kruskal</span><span>Floyd-Warshall</span><span>Knapsack</span><span>B-Tree</span><span>Red-Black Tree</span><span>Binomial Heap</span><span>Fibonacci Heap</span><span>N-Queens</span><span>Backtracking</span><span>NP-Hard</span><span>Prim</span><span>Kruskal</span><span>Floyd-Warshall</span><span>Knapsack</span><span>B-Tree</span><span>Red-Black Tree</span><span>Binomial Heap</span><span>Fibonacci Heap</span><span>N-Queens</span><span>Backtracking</span><span>NP-Hard</span><span>Prim</span><span>Kruskal</span><span>Floyd-Warshall</span><span>Knapsack</span><span>B-Tree</span><span>Red-Black Tree</span><span>Binomial Heap</span><span>Fibonacci Heap</span><span>N-Queens</span><span>Backtracking</span><span>NP-Hard</span></div></div><div class="vrow"><div id="v1"><span>Prim</span><span>Kruskal</span><span>Floyd-Warshall</span><span>Knapsack</span><span>B-Tree</span><span>Red-Black Tree</span><span>Binomial Heap</span><span>Fibonacci Heap</span><span>N-Queens</span><span>Backtracking</span><span>NP-Hard</span><span>Prim</span><span>Kruskal</span><span>Floyd-Warshall</span><span>Knapsack</span><span>B-Tree</span><span>Red-Black Tree</span><span>Binomial Heap</span><span>Fibonacci Heap</span><span>N-Queens</span><span>Backtracking</span><span>NP-Hard</span><span>Prim</span><span>Kruskal</span><span>Floyd-Warshall</span><span>Knapsack</span><span>B-Tree</span><span>Red-Black Tree</span><span>Binomial Heap</span><span>Fibonacci Heap</span><span>N-Queens</span><span>Backtracking</span><span>NP-Hard</span></div></div>
+<div class="stats"><div class="stat2 reveal"><b data-n="6">0</b><small>scenario modules</small></div><div class="stat2 reveal"><b data-n="10">0</b><small>algorithms and structures</small></div><div class="stat2 reveal"><b data-n="2">0</b><small>NP-hard problems</small></div></div>
+<div class="tiles"><a class="tile reveal" href="#/m1"><div class="n">1</div><h4>Connect the city</h4><p>Prim vs Kruskal</p></a><a class="tile reveal" href="#/m2"><div class="n">2</div><h4>Zone-to-zone travel</h4><p>Floyd-Warshall</p></a><a class="tile reveal" href="#/m3"><div class="n">3</div><h4>Project budget</h4><p>Fractional vs 0/1 Knapsack</p></a><a class="tile reveal" href="#/m4"><div class="n">4</div><h4>City data</h4><p>B-Tree, Red-Black, Heaps</p></a><a class="tile reveal" href="#/m5"><div class="n">5</div><h4>Sensor placement</h4><p>N-Queens, backtracking</p></a><a class="tile reveal" href="#/m6"><div class="n">6</div><h4>Limits of speed</h4><p>NP-Hard, NP-Complete</p></a></div><section id="flow"><div class="wrap">
+<div class="tag reveal">The framework</div><h2 class="reveal">How Algorithm 2035 decides</h2>
+<p class="lead reveal">One fixed algorithm cannot serve every request, so each request goes through the same four steps.</p>
+<div class="dots reveal" id="dots"></div>
+<svg class="fsv" viewBox="0 0 1000 12" preserveAspectRatio="none"><path d="M0 6H1000" stroke="#e6e7e8" stroke-width="2" fill="none" vector-effect="non-scaling-stroke"/><path id="fl" d="M0 6H1000" stroke="#0f459d" stroke-width="3" fill="none" vector-effect="non-scaling-stroke"/></svg>
+<div class="cols4">
+<div class="card reveal"><b>01</b><h3>INSPECT</h3>Read the request: sites and costs, zones, budgets, records or placements.</div>
+<div class="card reveal"><b>02</b><h3>MODEL</h3>Turn it into a graph, a distance matrix, an item list, a tree or a constraint search.</div>
+<div class="card reveal"><b>03</b><h3>SELECT</h3>Choose Prim or Kruskal, Floyd-Warshall, a knapsack, a tree or heap, or backtracking.</div>
+<div class="card reveal"><b>04</b><h3>EXPLAIN</h3>Run it live, show time and space complexity, and say why that technique fits.</div>
+</div></div></section><section id="sel"><div class="wrap"><div class="tag reveal">Adaptive Algorithm Selector</div><h2 class="reveal">Ask the framework</h2><p class="lead reveal">Pick a smart-city request. The framework models it, selects a technique, and explains the choice.</p>
+<div class="selx reveal"><div class="selq" id="selq"></div><select id="sq" hidden></select>
+<div class="selr"><div class="selflow"><div class="ss" id="ss1"><small>1 · MODEL</small><span id="s1"></span></div><i class="ar">→</i><div class="ss big" id="ss2"><small>2 · TECHNIQUE</small><b id="s2"></b></div><i class="ar">→</i><div class="ss" id="ss3"><small>3 · COMPLEXITY</small><span id="s3"></span></div></div>
+<div class="cnd" id="cndw"><span id="so"></span></div><div class="verdict" id="s4"></div><div class="ctas"><a class="btn primary" id="s5" href="#/m1">Open module</a></div></div></div></div></div></section>
+</div><div class="pg" id="p-m1" style="display:none"><header class="ph"><span class="chip">MODULE 1 · URBAN INFRASTRUCTURE CONNECTION</span><h1 class="display sp">Connect the city: <span>Prim vs Kruskal</span></h1><p class="lede">Sites are real Indian cities on the map, and the cable cost between two cities is roughly their distance in km ÷ 10. Both algorithms build a minimum-cost network connecting every site. Flip between a dense and a sparse city and watch which one does less work.</p></header><section style="padding-bottom:24px"><div class="wrap"><canvas class="st3 hero" id="hm1"></canvas></div></section><section class="cityimpact"><div class="wrap"><div class="tag reveal">Why the city needs this</div><h2 class="reveal">Cheaper cables, fewer roads dug up</h2>
+<div class="cols"><div class="card reveal"><h3>THE CITY SITUATION</h3><p>The city must connect every ward office, substation, CCTV hub and IoT gateway to one network. Every possible link costs money (trenching, fibre, permits), and connecting everything to everything is far too expensive.</p></div><div class="card reveal"><h3>HOW THE ALGORITHM HELPS</h3><p>A <b>minimum spanning tree</b> keeps every site reachable using the fewest and cheapest links, with no wasted loops. The framework then compares <b>Prim</b> and <b>Kruskal</b>: Prim wins on dense, well-connected cities; Kruskal wins on sparse ones where few links are even proposed.</p></div></div>
+<div class="card reveal"><h3>FROM CITY REQUEST TO RESULT</h3><div class="cflow"><div><b>PROPOSAL</b>Engineers list candidate links between sites with their cable cost.</div><div><b>MODEL</b>Sites become vertices, links become weighted edges.</div><div><b>SELECT</b>Dense graph: Prim. Sparse graph: Kruskal.</div><div><b>RESULT</b>A network of V−1 links with the lowest total cost.</div></div></div>
+<div class="cols"><div class="card reveal"><h3>WHO IN THE CITY USES IT</h3><div class="cchips"><span>Public works</span><span>Power utility</span><span>Telecom / IoT gateways</span><span>Surveillance</span></div><div class="mchips"><div><b>9 vs 45</b><small>links used vs possible for 10 sites</small></div><div><b>V−1</b><small>links in the final network</small></div><div><b>0</b><small>redundant loops</small></div></div></div><div class="card reveal"><h3>WHEN THE CITY GROWS</h3><p>With 10 sites there are 45 possible links but only 9 are needed. At 100 sites there are 4,950 possible links and still only 99 are built, so the saving grows with the city. Both algorithms stay fast, O(E log V), so this module never becomes a bottleneck.</p><p class="verdict">Trade-off: a tree has no backup path. A real city may add a few extra links for resilience on top of this cheapest baseline.</p></div></div></div></section><section id="m1"><div class="wrap">
+
+
+
+<div class="card reveal"><h3>LIVE SIMULATOR</h3>
+<div class="ctl">Sites <input type="range" id="n" min="5" max="14" value="9"><b id="nv" style="color:var(--tx)">9</b>
+<button id="bs" class="on">Sparse graph</button><button id="bd">Dense graph</button>
+<button id="rg">New city</button>Speed <input type="range" id="sp" min="150" max="1400" value="800" style="direction:rtl">
+<button class="go" id="run">▶ Run both</button></div>
+<div class="cols"><div><div class="tag">PRIM (grow one tree)</div><canvas class="st3 sm" id="cP"></canvas><div class="stat" id="sP"></div><div class="pch">PYTHON (live step)</div><div class="pc" id="pcP"></div></div>
+<div><div class="tag">KRUSKAL (sort edges + union-find)</div><canvas class="st3 sm" id="cK"></canvas><div class="stat" id="sK"></div><div class="pch">PYTHON (live step)</div><div class="pc" id="pcK"></div></div></div>
+<canvas class="sim" id="c1ch" width="900" height="200" style="margin:14px 0"></canvas><div class="verdict" id="vd">Press Run. Green = edge accepted, red = edge rejected (would form a cycle), yellow = being examined.</div></div>
+<div class="cols">
+<div class="card reveal"><h3>THE CODE</h3><pre>import heapq
+
+def prim(n, adj, start=0):          # adj[u] = [(w, u, v), ...]
+    seen = {start}
+    heap = list(adj[start])
+    heapq.heapify(heap)
+    total = 0
+    while heap and len(seen) &lt; n:
+        w, u, v = heapq.heappop(heap)
+        if v in seen:
+            continue                 # leads to a site already connected
+        seen.add(v)
+        total += w
+        for e in adj[v]:
+            heapq.heappush(heap, e)
+    return total
+
+def kruskal(n, edges):               # edges = [(w, u, v), ...]
+    parent = list(range(n))
+
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]   # path compression
+            x = parent[x]
+        return x
+
+    total = 0
+    for w, u, v in sorted(edges):
+        ru, rv = find(u), find(v)
+        if ru != rv:                 # no cycle
+            parent[ru] = rv
+            total += w
+    return total</pre></div>
+<div class="card reveal"><h3>IN PLAIN WORDS</h3><p><b>Prim</b> starts at one site and keeps adding the cheapest cable that reaches a brand-new site, so the network grows like a spreading tree.</p><br>
+<p><b>Kruskal</b> sorts all cables from cheapest to dearest and picks each one unless it would close a loop (checked with union-find).</p><br>
+<p>Both give the same minimum total cost. The difference is effort: Kruskal's cost is dominated by sorting every edge, so it likes <i>sparse</i> graphs. Prim with a heap does well on <i>dense</i> graphs because it never sorts all edges.</p>
+<br><table class="cx"><tr><th></th><th>Time</th><th>Space</th></tr>
+<tr><td>Prim (binary heap)</td><td>O(E log V)</td><td>O(V + E)</td></tr>
+<tr><td>Prim (adj. matrix)</td><td>O(V²)</td><td>O(V²)</td></tr>
+<tr><td>Kruskal</td><td>O(E log E)</td><td>O(V + E)</td></tr></table></div></div>
+</div></section></div><div class="pg" id="p-m3" style="display:none"><header class="ph"><span class="chip">MODULE 3 · BUDGETED CITY-PROJECT SELECTION</span><h1 class="display sp">Spend the budget: <span>Fractional vs 0/1 Knapsack</span></h1><p class="lede">Same projects, same budget, two rules. If a project can be split (phased funding), greedy by value-per-cost is optimal. If it is all-or-nothing (a bridge), you need dynamic programming.</p></header><section class="cityimpact"><div class="wrap"><div class="tag reveal">Why the city needs this</div><h2 class="reveal">Choosing which city projects to fund</h2>
+<div class="cols"><div class="card reveal"><h3>THE CITY SITUATION</h3><p>The council has a fixed yearly budget and more projects than it can fund: streetlights, flood drains, a metro extension, a bridge. Each has a cost and a value to citizens. The best choice depends on whether a project can be split.</p></div><div class="card reveal"><h3>HOW THE ALGORITHM HELPS</h3><p><b>Fractional Knapsack</b> fits phased or divisible funding such as road resurfacing or solar rollout: rank by value per rupee and fund the best first (greedy, optimal). <b>0/1 Knapsack</b> fits all-or-nothing projects such as a bridge: greedy can fail here, so dynamic programming checks every budget level.</p></div></div>
+<div class="card reveal"><h3>FROM CITY REQUEST TO RESULT</h3><div class="cflow"><div><b>LIST</b>Projects with cost and citizen value.</div><div><b>ASK</b>Can this project be split into phases?</div><div><b>SELECT</b>Yes: fractional greedy. No: 0/1 dynamic programming.</div><div><b>RESULT</b>The funded set that gives the city the most value for the budget.</div></div></div>
+<div class="cols"><div class="card reveal"><h3>WHO IN THE CITY USES IT</h3><div class="cchips"><span>Finance office</span><span>Urban planners</span><span>Maintenance teams</span></div><div class="mchips"><div><b>O(n log n)</b><small>fractional greedy</small></div><div><b>O(nW)</b><small>0/1 DP table</small></div><div><b>≥ 0/1</b><small>fractional value is never lower</small></div></div></div><div class="card reveal"><h3>WHEN THE CITY GROWS</h3><p>Fractional value is always at least as high as 0/1 value, because splitting can only help. The gap shows what indivisibility costs the city. The 0/1 table grows with both the number of projects and the budget size, which is why money is counted in coarse units such as lakhs.</p><p class="verdict">The 0/1 knapsack is NP-complete in general, but this DP is pseudo-polynomial, so it stays practical at city-budget scale.</p></div></div></div></section><section id="m3"><div class="wrap">
+
+
+
+<div class="card reveal"><h3>LIVE SIMULATOR</h3>
+<div class="ctl">Budget <input type="range" id="bud" min="6" max="30" value="16"><b id="bv" style="color:var(--tx)">16</b> M ₹
+<button id="kr">New projects</button></div>
+<div class="cols"><div><div class="tag">FRACTIONAL (divisible) · GREEDY</div><div id="fr"></div></div>
+<div><div class="tag">0/1 (indivisible) · DYNAMIC PROGRAMMING</div><div id="zo"></div></div></div>
+<div class="verdict" id="kv"></div>
+<div style="margin-top:14px" class="tag">DP TABLE (rows = projects considered, columns = budget; blue path = chosen)</div><table class="dp" id="dpt"></table></div>
+<div class="cols">
+<div class="card reveal"><h3>THE CODE</h3><pre>def fractional(items, W):           # items: [(cost, value), ...]
+    items = sorted(items, key=lambda x: x[1] / x[0], reverse=True)
+    total = 0.0
+    for c, v in items:
+        take = min(1, W / c)         # fraction we can afford
+        total += v * take
+        W -= c * take
+        if W &lt;= 0:
+            break
+    return total
+
+def knap01(items, W):
+    n = len(items)
+    dp = [[0] * (W + 1) for _ in range(n + 1)]
+    for i, (c, v) in enumerate(items, 1):
+        for w in range(W + 1):
+            dp[i][w] = dp[i - 1][w]
+            if c &lt;= w:
+                dp[i][w] = max(dp[i][w], dp[i - 1][w - c] + v)
+    return dp[n][W]</pre></div>
+<div class="card reveal"><h3>IN PLAIN WORDS</h3><p><b>Fractional:</b> rank projects by value per rupee, fund the best first, and put whatever money is left into a slice of the next one. Greedy is provably optimal here.</p><br>
+<p><b>0/1:</b> greedy can fail because a high-ratio project may waste budget that two smaller ones could use better. The DP table tries every budget level for every prefix of projects and keeps the best.</p><br>
+<p>Fractional value is always ≥ 0/1 value. The gap is the price of indivisibility.</p>
+<br><table class="cx"><tr><th></th><th>Time</th><th>Space</th></tr>
+<tr><td>Fractional</td><td>O(n log n)</td><td>O(1) extra</td></tr>
+<tr><td>0/1 Knapsack</td><td>O(nW) pseudo-polynomial</td><td>O(nW), O(W) if only the value is needed</td></tr></table></div></div>
+</div></section></div><div class="pg" id="p-m2" style="display:none"><header class="ph"><span class="chip">MODULE 2 · CITY-WIDE CONNECTIVITY</span><h1 class="display sp">Every zone to every zone: <span>Floyd-Warshall</span></h1><p class="lede">Zones are Indian metro hubs on the map, travel or communication costs are directed edges, and a missing link is ∞. Floyd-Warshall fills the full cost table by asking one question for every triple of zones.</p></header><section style="padding-bottom:24px"><div class="wrap"><canvas class="st3 hero" id="hm2"></canvas></div></section><section class="cityimpact"><div class="wrap"><div class="tag reveal">Why the city needs this</div><h2 class="reveal">Answering "how long from any zone to any zone" at once</h2>
+<div class="cols"><div class="card reveal"><h3>THE CITY SITUATION</h3><p>Ambulance routing, bus planning and data-centre failover all need the cheapest travel or communication cost between <b>every pair</b> of zones, not just from one starting point. Links are often one-way (flyovers, one-way streets) and some zones have no direct link.</p></div><div class="card reveal"><h3>HOW THE ALGORITHM HELPS</h3><p><b>Floyd-Warshall</b> builds one complete cost table. For every zone k it asks whether going via k beats the best known route from i to j. Once built, any zone-to-zone question is a single table lookup, and a missing route stays ∞.</p></div></div>
+<div class="card reveal"><h3>FROM CITY REQUEST TO RESULT</h3><div class="cflow"><div><b>COLLECT</b>Direct travel or communication costs between zones.</div><div><b>MODEL</b>An n×n distance matrix, with ∞ for no direct link.</div><div><b>RUN</b>Try each zone as a stopover: n×n×n checks.</div><div><b>RESULT</b>Cheapest cost for all pairs, ready for instant lookup.</div></div></div>
+<div class="cols"><div class="card reveal"><h3>WHO IN THE CITY USES IT</h3><div class="cchips"><span>Emergency services</span><span>Traffic control</span><span>Public transport</span><span>IoT gateways</span></div><div class="mchips"><div><b>Θ(n³)</b><small>time, any graph</small></div><div><b>Θ(n²)</b><small>space for the table</small></div><div><b>8×</b><small>work when zones double</small></div></div></div><div class="card reveal"><h3>WHEN THE CITY GROWS</h3><p>Doubling the zones multiplies the work by eight: 10 zones is 1,000 steps, 20 zones is 8,000 and 100 zones is 1,000,000. That is fine for a city-wide plan recomputed overnight, but too heavy to rerun on every traffic change.</p><p class="verdict">That is why the framework picks Floyd-Warshall for all-pairs planning and a single-source method for live, one-off route questions.</p></div></div></div></section><section><div class="wrap">
+<div class="cols"><div class="card reveal"><h3>IN PLAIN WORDS</h3>Can going from zone <b>i</b> to zone <b>j</b> through zone <b>k</b> be cheaper than the best known route? If yes, remember the cheaper cost. Allow one more middle zone at a time (k = 0, 1, 2, …) and after the last one every pair holds its true cheapest cost. Because there are three nested loops over n zones, the work grows as n³, so more zones cost far more than proportionally.</div>
+<div class="card reveal"><h3>CODE</h3><pre>INF = float('inf')
+
+def floyd_warshall(d):               # d[i][j] = cost, INF if no link
+    n = len(d)
+    nxt = [[j if d[i][j] &lt; INF else None for j in range(n)]
+           for i in range(n)]
+    for k in range(n):
+        for i in range(n):
+            for j in range(n):
+                if d[i][k] + d[k][j] &lt; d[i][j]:
+                    d[i][j] = d[i][k] + d[k][j]
+                    nxt[i][j] = nxt[i][k]     # path reconstruction
+    return d, nxt</pre></div></div>
+<div class="card reveal"><h3>LIVE SIMULATOR · COST HEATMAP</h3>
+<div class="ctl">Zones <input type="range" id="fn" min="4" max="20" value="8"><b id="fnv" style="color:var(--tx)">8</b><button id="fg">New city</button>Speed (slow ⟷ fast) <input type="range" id="fsp" min="1" max="100" value="30"><button class="go" id="frun">▶ Run</button><button id="fst">Step</button><button id="ffi">Finish</button></div>
+<div class="cols"><div><canvas class="st3" id="f3"></canvas><div class="hint">Drag to rotate. Tower height = how many zones that district can reach, it grows as shortcuts are found. Yellow beam = zone allowed as middle stop, thick arcs = the trip i to k to j being compared (green = shorter route found, yellow = no improvement).</div><div class="stat" id="fs"></div><canvas class="sim" id="fc" width="560" height="440" style="margin-top:12px"></canvas></div>
+<div><div class="pch">PYTHON</div><div class="pc" id="pcF"></div><div class="verdict" id="fv"></div><canvas class="sim" id="fch" width="560" height="220" style="margin-top:12px"></canvas><div class="verdict" id="fx"></div></div></div>
+<div class="stat">Darker blue = more expensive. Yellow outline = the cell being compared, thin outlines = d[i][k] and d[k][j]. Row and column k are shaded.</div></div>
+<div class="card reveal"><h3>COMPLEXITY</h3><table class="cx"><tr><th>Measure</th><th>Value</th><th>Why</th></tr><tr><td>Time</td><td>Θ(n³)</td><td>three nested loops of n, always, for any graph</td></tr><tr><td>Space</td><td>Θ(n²)</td><td>one n×n table, updated in place</td></tr><tr><td>Path reconstruction</td><td>+Θ(n²) space</td><td>keep a next[i][j] table, then follow it to list the zones on a route</td></tr><tr><td>Negative edges</td><td>allowed</td><td>no negative cycles; d[i][i] &lt; 0 reveals one</td></tr></table></div>
+</div></section></div>
+
+<div class="pg" id="p-m5" style="display:none"><header class="ph"><span class="chip">MODULE 5 · CITY PLACEMENT CHALLENGE</span><h1 class="display sp">Conflict-free sensors: <span>N-Queens</span></h1><p class="lede">Put one sensor in every row of an n×n city grid (each row is named after a city zone) so that no two share a column or a diagonal. Backtracking tries a spot, stops as soon as there is a conflict and steps back.</p></header><section class="cityimpact"><div class="wrap"><div class="tag reveal">Why the city needs this</div><h2 class="reveal">Placing sensors so none interfere</h2>
+<div class="cols"><div class="card reveal"><h3>THE CITY SITUATION</h3><p>Surveillance cameras, air-quality monitors and radar units must be placed on a city grid so that no two sensors cover the same row, column or diagonal line of sight. Overlapping coverage wastes money and causes signal conflicts.</p></div><div class="card reveal"><h3>HOW THE ALGORITHM HELPS</h3><p><b>Backtracking</b> places one sensor per zone row, tries each column, and abandons a position the moment it conflicts. This prunes huge parts of the search instead of testing every layout. The same approach handles related city questions such as a Hamiltonian check (can one patrol visit every zone once?) and TSP inspection tours with <b>Branch and Bound</b>.</p></div></div>
+<div class="card reveal"><h3>FROM CITY REQUEST TO RESULT</h3><div class="cflow"><div><b>GRID</b>The city area is divided into an n×n grid of zones.</div><div><b>MODEL</b>A constraint search: one sensor per row, no shared column or diagonal.</div><div><b>SEARCH</b>Place, check, and step back on a conflict.</div><div><b>RESULT</b>A conflict-free layout, or proof that none exists.</div></div></div>
+<div class="cols"><div class="card reveal"><h3>WHO IN THE CITY USES IT</h3><div class="cchips"><span>Surveillance</span><span>Environment monitoring</span><span>Maintenance routes</span></div><div class="mchips"><div><b>O(n!)</b><small>worst-case search</small></div><div><b>O(n)</b><small>space: one column per row</small></div><div><b>NP-hard</b><small>for TSP tours</small></div></div></div><div class="card reveal"><h3>WHEN THE CITY GROWS</h3><p>The number of possible layouts explodes with n, but backtracking visits only a small fraction of them. Likewise an inspection tour of 10 zones has 181,440 distinct tours, and 15 zones has about 43 billion, so exact search needs pruning (Branch and Bound) or a heuristic once the city is large.</p></div></div></div></section><section><div class="wrap">
+<div class="cols"><div class="card reveal"><h3>IN PLAIN WORDS</h3>Fill the grid row by row. In each row try the columns left to right. If a spot clashes with an earlier sensor, skip it. If a row has no safe spot, go back to the previous row and move its sensor. This pruning cuts away huge parts of the n<sup>n</sup> possibilities, but the worst case is still exponential.</div>
+<div class="card reveal"><h3>CODE</h3><pre>def solve(n):
+    cols, solutions = [], 0
+
+    def conflicts(r, c):
+        return any(cc == c or abs(cc - c) == r - rr
+                   for rr, cc in enumerate(cols))
+
+    def place(r):
+        nonlocal solutions
+        if r == n:
+            solutions += 1
+            return
+        for c in range(n):
+            if not conflicts(r, c):
+                cols.append(c)
+                place(r + 1)
+                cols.pop()           # backtrack
+
+    place(0)
+    return solutions</pre></div></div>
+<div class="card reveal"><h3>LIVE SIMULATOR</h3>
+<div class="ctl">N <input type="range" id="qn" min="4" max="12" value="6"><b id="qnv" style="color:var(--tx)">6</b>Speed <input type="range" id="qsp" min="1" max="100" value="30"><button class="go" id="qrun">▶ Run</button><button id="qnx">Next solution</button><button id="qrs">Reset</button></div>
+<div class="cols"><div><canvas class="st3" id="q3"></canvas><div class="hint">Drag to rotate. Each coloured tower is a sensor on a city block; the red marker and line show the clash.</div></div>
+<div><div class="pch">PYTHON</div><div class="pc" id="pcQ"></div>
+<div class="cols4" style="margin-top:12px"><div class="card"><b id="qv">0</b>nodes visited</div><div class="card"><b id="qb">0</b>backtracks</div><div class="card"><b id="qs">0</b>solutions</div></div>
+<div class="verdict" id="qd">Press Run. Coloured towers = placed sensors, red = conflict, grey = backtracked.</div></div></div></div>
+<div class="card reveal"><h3>COMPLEXITY</h3><table class="cx"><tr><th>Measure</th><th>Value</th><th>Why</th></tr><tr><td>Time, worst case</td><td>O(n!)</td><td>each row has at most one fewer free column than the last</td></tr><tr><td>Time, with pruning</td><td>far below n!</td><td>conflicting branches are cut at once (n=8 needs only about 2,000 nodes)</td></tr><tr><td>Space</td><td>O(n)</td><td>one column per row plus the recursion depth</td></tr></table></div>
+</div></section></div>
+
+<div class="pg" id="p-m6" style="display:none"><header class="ph"><span class="chip">MODULE 6 · COMPLEXITY AWARENESS</span><h1 class="display sp">Where the framework <span>hits a wall</span></h1><p class="lede">Some city problems have fast algorithms. Others are NP-hard, and the work explodes as the input grows. Knowing which is which is part of choosing the algorithm.</p></header><section><div class="wrap"><div class="tag reveal">Feasibility board</div><h2 class="reveal">What can the city compute in time?</h2><p class="lead reveal">Add zones with the slider. Each card shows how long the exact algorithm needs on a fast server (about 1 billion steps per second).</p>
+<div class="card reveal"><div class="fzctl">City zones / sites (n) <input type="range" id="fzn" min="4" max="40" value="16"><b id="fznv">16</b><span id="fsum"></span></div><div class="fz" id="fz"></div></div></div></section><section class="cityimpact"><div class="wrap"><div class="tag reveal">Why the city needs this</div><h2 class="reveal">Knowing when the city has outgrown exact answers</h2>
+<div class="cols"><div class="card reveal"><h3>THE CITY SITUATION</h3><p>Some requests, like an inspection tour that visits every zone once, cannot be solved quickly by any known exact algorithm as the city grows. A smart-city platform must recognise this before promising an answer.</p></div><div class="card reveal"><h3>HOW THE ALGORITHM HELPS</h3><p>The framework labels each module: <b>polynomial</b> ones (Prim, Kruskal, Floyd-Warshall, fractional knapsack) are safe at any city size. <b>NP-hard / NP-complete</b> ones (TSP, Hamiltonian path, 0/1 knapsack in general) get exact solvers for small inputs and heuristics or approximations for large ones.</p></div></div>
+<div class="card reveal"><h3>FROM CITY REQUEST TO RESULT</h3><div class="cflow"><div><b>INSPECT</b>Read the request and its size n.</div><div><b>CLASSIFY</b>Polynomial, or NP-hard / NP-complete?</div><div><b>CHOOSE</b>Exact for small n. Heuristic or approximate for large n.</div><div><b>EXPLAIN</b>Report the choice with time and space complexity.</div></div></div>
+<div class="cols"><div class="card reveal"><h3>WHO IN THE CITY USES IT</h3><div class="cchips"><span>Control platform</span><span>Service-tour planners</span><span>City IT team</span></div><div class="mchips"><div><b>n³</b><small>still usable at city scale</small></div><div><b>2ⁿ, n!</b><small>explode quickly</small></div><div><b>Exact → heuristic</b><small>switch point</small></div></div></div><div class="card reveal"><h3>WHEN THE CITY GROWS</h3><p>Polynomial work slows down but stays usable. For NP-hard problems every extra zone multiplies the time, so an exact answer that takes a second at 10 zones can take longer than the age of the universe at 30. The live chart below shows this blow-up.</p></div></div></div></section><section><div class="wrap">
+<div class="cols"><div class="card reveal"><h3>NP-HARD / NP-COMPLETE IN THE FRAMEWORK</h3><table class="cx"><tr><th>Problem</th><th>Class</th></tr><tr><td>TSP inspection tour</td><td>NP-hard (decision version NP-complete)</td></tr><tr><td>Hamiltonian path / cycle</td><td>NP-complete</td></tr><tr><td>0/1 Knapsack</td><td>NP-complete; DP is O(nW), only pseudo-polynomial</td></tr><tr><td>N-Queens, general placement</td><td>exponential worst case with backtracking</td></tr></table></div>
+<div class="card reveal"><h3>POLYNOMIAL MODULES</h3><table class="cx"><tr><th>Module</th><th>Time</th></tr><tr><td>MST (Prim, Kruskal)</td><td>O(E log V)</td></tr><tr><td>Floyd-Warshall</td><td>Θ(n³)</td></tr><tr><td>Fractional Knapsack</td><td>O(n log n)</td></tr></table></div></div>
+<div class="card reveal"><h3>LIVE TIME-EXPLOSION CHART</h3><div class="ctl">Input size n <input type="range" id="en" min="2" max="60" value="20"><b id="env" style="color:var(--tx)">20</b></div>
+<canvas class="st3" id="e3" style="margin-bottom:14px"></canvas><canvas class="sim" id="ec" width="900" height="320"></canvas><div class="stat">Vertical axis is logarithmic (each gridline = ×10⁵ operations). Straight lines are polynomial; the curves that bend upward are the explosion.</div>
+<table class="cx" id="et" style="margin-top:14px"></table><div class="verdict" id="ev"></div></div>
+<div class="card reveal"><h3>WHAT HAPPENS AS THE INPUT GROWS</h3>Polynomial algorithms (n log n, n³) slow down but stay usable. For NP-hard problems the exact algorithms take 2ⁿ or n! steps, so adding a few zones can turn seconds into centuries. The practical answer is to switch technique: <b>heuristics</b> (nearest neighbour for TSP), <b>approximation</b> (2-approximation for metric TSP), <b>branch and bound</b> with strong pruning, or <b>DP</b> when the numbers are small (knapsack).</div>
+</div></section></div>
+<div class="pg" id="p-m4" style="display:none"><header class="ph"><span class="chip">MODULE 4 · DYNAMIC CITY INFORMATION</span><h1 class="display sp">Keep city data <span>fast while it changes</span></h1><p class="lede">Two workloads, two comparisons. City records (citizen and asset IDs) need indexing, search and updates: B-Tree vs Red-Black Tree. Emergency calls need a changing priority list: Binomial Heap vs Fibonacci Heap.</p></header><section class="cityimpact"><div class="wrap"><div class="tag reveal">Why the city needs this</div><h2 class="reveal">Keeping live city data fast as it changes</h2>
+<div class="cols"><div class="card reveal"><h3>THE CITY SITUATION</h3><p>The city control platform constantly looks up citizen and asset records, inserts new ones and updates old ones. Separately, emergency calls arrive all day and their priority changes as situations worsen.</p></div><div class="card reveal"><h3>HOW THE ALGORITHM HELPS</h3><p><b>Workload A, records:</b> a <b>B-Tree</b> keeps the tree very short for large disk-based registers, while a <b>Red-Black Tree</b> suits in-memory indexes. <b>Workload B, emergency calls:</b> a <b>Binomial Heap</b> gives steady, predictable costs; a <b>Fibonacci Heap</b> makes inserts and priority raises very cheap, saving the tidy-up for when the next call is dispatched.</p></div></div>
+<div class="card reveal"><h3>FROM CITY REQUEST TO RESULT</h3><div class="cflow"><div><b>WORKLOAD</b>Many lookups and updates, or a changing priority list.</div><div><b>MODEL</b>A search index (tree) or a priority queue (heap).</div><div><b>SELECT</b>Disk-scale index: B-Tree. In-memory: Red-Black. Frequent priority raises: Fibonacci.</div><div><b>RESULT</b>Dispatch always gets the most urgent call quickly.</div></div></div>
+<div class="cols"><div class="card reveal"><h3>WHO IN THE CITY USES IT</h3><div class="cchips"><span>Citizen registry</span><span>Emergency dispatch</span><span>Asset management</span></div><div class="mchips"><div><b>3 to 4</b><small>B-Tree node reads for 1M records</small></div><div><b>~40</b><small>Red-Black levels for 1M records</small></div><div><b>O(1)</b><small>Fibonacci insert and decrease-key, amortised</small></div></div></div><div class="card reveal"><h3>WHEN THE CITY GROWS</h3><p>As records and calls grow, tree height and heap work grow only logarithmically, but the constants matter: a short B-Tree means fewer slow disk reads, and a Fibonacci heap saves work when many calls escalate. The simulators below let you see this work count directly.</p><p class="verdict">Heap extract-min is O(log n) for both. The difference shows up in how much work inserts and priority changes cost.</p></div></div></div></section><section><div class="wrap">
+<div class="tag reveal">Workload A</div><h2 class="reveal">Indexing city records</h2>
+<div class="cols"><div class="card reveal"><h3>B-TREE · IN PLAIN WORDS</h3>Each node holds many sorted keys and has many children, so the tree stays very short. A lookup reads only a few nodes, which is ideal when every node is a disk page. When a node overflows it <b>splits</b> in two and pushes the middle key up. When it gets too empty it <b>borrows</b> from a neighbour or <b>merges</b> with it.<pre>def insert(self, key):               # max_keys = m - 1
+    old = self.root
+    split = self._insert(old, key)
+    if split:                        # root overflowed: tree grows taller
+        self.root = Node(leaf=False)
+        self.root.keys = [split[0]]
+        self.root.children = [old, split[1]]
+
+def _insert(self, node, key):
+    i = bisect.bisect_left(node.keys, key)
+    if node.leaf:
+        node.keys.insert(i, key)     # put the key in the leaf
+    else:
+        split = self._insert(node.children[i], key)
+        if split:
+            node.keys.insert(i, split[0])
+            node.children.insert(i + 1, split[1])
+    if len(node.keys) &gt; self.max_keys:       # too many keys: split
+        mid = len(node.keys) // 2
+        right = Node(node.leaf)
+        right.keys = node.keys[mid + 1:]
+        right.children = node.children[mid + 1:]
+        up = node.keys[mid]          # middle key moves up
+        node.keys = node.keys[:mid]
+        node.children = node.children[:mid + 1]
+        return up, right
+    return None</pre>
+<table class="cx"><tr><th>Operation</th><th>Time</th></tr><tr><td>Search / insert / delete</td><td>O(log n), about log<sub>m</sub> n node reads</td></tr><tr><td>Space</td><td>O(n)</td></tr></table></div>
+<div class="card reveal"><h3>RED-BLACK TREE · IN PLAIN WORDS</h3>A binary search tree where every node is red or black. Simple rules (no red node has a red child, every path has the same number of black nodes) keep the longest path at most twice the shortest. After an insert or delete, <b>recolouring</b> and a few <b>rotations</b> restore the rules. Nodes are small, so it suits memory.<pre>def insert(self, key):
+    z = Node(key, RED)               # ordinary BST insert, new node is red
+    self.bst_insert(z)
+    while z.parent.color == RED:     # red parent breaks the rule
+        g = z.parent.parent
+        uncle = g.right if z.parent is g.left else g.left
+        if uncle.color == RED:       # red uncle: recolour, move up
+            z.parent.color = uncle.color = BLACK
+            g.color = RED
+            z = g
+        elif z.parent is g.left:     # black uncle: rotate and recolour
+            if z is z.parent.right:
+                z = z.parent
+                self.rotate_left(z)
+            z.parent.color, g.color = BLACK, RED
+            self.rotate_right(g)
+        else:
+            if z is z.parent.left:
+                z = z.parent
+                self.rotate_right(z)
+            z.parent.color, g.color = BLACK, RED
+            self.rotate_left(g)
+    self.root.color = BLACK</pre>
+<table class="cx"><tr><th>Operation</th><th>Time</th></tr><tr><td>Search / insert / delete</td><td>O(log n), height up to 2 log n</td></tr><tr><td>Rotations</td><td>at most 2 per insert, 3 per delete</td></tr><tr><td>Space</td><td>O(n)</td></tr></table></div></div>
+<div class="card reveal"><h3>LIVE SIMULATOR · B-TREE vs RED-BLACK TREE</h3>
+<div class="ctl">B-Tree order (max children) <input type="range" id="bo" min="3" max="8" value="4"><b id="bov" style="color:var(--tx)">4</b>Key <input type="number" id="kin" min="1" max="999" placeholder="random" style="width:90px;font:inherit;padding:8px 12px;border-radius:999px;border:1px solid var(--outline)">
+<button class="go" id="bins">Insert</button><button id="bdel">Delete</button><button id="bfnd">Search</button><button id="bblk">Bulk insert 20</button><button id="bclr">Clear</button></div>
+<div class="tag" style="margin-top:8px">WHERE THE RECORDS LIVE · INDIA MAP</div><canvas class="st3 hero" id="m4a"></canvas><div class="stat" id="m4at"></div><div class="hint">Drag to rotate. Each tower is a city registry; taller means more records. Insert, search or delete a key: its home city lights up, and the two trees below show how each index finds it.</div>
+<div class="tag" style="margin-top:18px">THE SAME RECORDS AS DATA STRUCTURES</div>
+<div class="cols"><div><h3 style="font-size:12.5px;letter-spacing:.1em;color:var(--primary)">B-TREE</h3><canvas class="st3 sm" id="b3"></canvas><div class="stat" id="bst"></div><div class="pch">PYTHON</div><div class="pc" id="pcB"></div></div>
+<div><h3 style="font-size:12.5px;letter-spacing:.1em;color:var(--primary)">RED-BLACK TREE</h3><canvas class="st3 sm" id="r3"></canvas><div class="stat" id="rst"></div><div class="pch">PYTHON</div><div class="pc" id="pcR"></div></div></div>
+<div class="legend"><span><i style="background:#FBBC04"></i>key just touched</span><span><i style="background:#F1F3F4;border:1px solid #9AA0A6"></i>B-Tree key cell</span><span><i style="background:#EA4335"></i>red node</span><span><i style="background:#23252b"></i>black node</span><span>coloured bar under a B-Tree node = how full it is</span></div><div class="hint">Drag to rotate. New keys pop in. Level labels show how short the B-Tree stays.</div><div class="tag" style="margin-top:16px">HEAD-TO-HEAD · THIS SESSION</div><canvas class="sim" id="bcmp" width="900" height="210"></canvas><div class="verdict" id="bvd">Press Bulk insert, then try insert, delete and search. Counters accumulate until you clear or change the order.</div></div>
+<div class="card reveal"><h3>WHEN EACH WINS</h3><b>B-Tree:</b> large indexes on disk or in a database, because a short tree means few page reads. Use it for the city citizen register or asset index. <b>Red-Black Tree:</b> in-memory sets and maps (many language libraries use it), because small nodes and cheap rotations make updates fast when no disk is involved. Compare the "node accesses" counters above: the B-Tree touches far fewer nodes per lookup, but each B-Tree node is bigger.</div>
+
+<div class="tag reveal" style="margin-top:34px">Workload B</div><h2 class="reveal">Dispatching emergency calls</h2>
+<div class="cols"><div class="card reveal"><h3>BINOMIAL HEAP · IN PLAIN WORDS</h3>A forest of binomial trees, at most one of each size (like binary digits of n). Adding a call is like adding 1 to a binary number: equal trees <b>link</b> and carry. Extract-min removes the smallest root and merges its children back in. Decrease-key swaps the call upward.<pre>def link(a, b):                      # equal degree: smaller key on top
+    if b.key &lt; a.key:
+        a, b = b, a
+    a.children.append(b)
+    b.parent = a
+    a.degree += 1
+    return a
+
+def merge(self, trees):              # like binary addition with carries
+    slot = {}
+    for t in trees:
+        while t.degree in slot:
+            t = link(slot.pop(t.degree), t)
+        slot[t.degree] = t
+    return list(slot.values())
+
+def insert(self, key):
+    self.roots = self.merge(self.roots + [Node(key)])
+
+def extract_min(self):
+    m = min(self.roots, key=lambda r: r.key)
+    self.roots.remove(m)
+    for c in m.children:
+        c.parent = None
+    self.roots = self.merge(self.roots + m.children)
+    return m
+
+def decrease_key(self, x, new_key):
+    x.key = new_key
+    while x.parent and x.key &lt; x.parent.key:     # swap upward
+        x.key, x.parent.key = x.parent.key, x.key
+        x = x.parent</pre>
+<table class="cx"><tr><th>Operation</th><th>Time</th></tr><tr><td>Insert</td><td>O(log n) worst, O(1) amortized</td></tr><tr><td>Extract-min</td><td>O(log n)</td></tr><tr><td>Decrease-key</td><td>O(log n)</td></tr><tr><td>Space</td><td>O(n)</td></tr></table></div>
+<div class="card reveal"><h3>FIBONACCI HEAP · IN PLAIN WORDS</h3>It is lazy. Insert just drops the call into the root list. All the tidying (<b>consolidate</b>, linking equal-degree trees) is saved for extract-min. Decrease-key <b>cuts</b> the call out and puts it in the root list, with a <b>cascading cut</b> when a parent has already lost a child. This makes insert and decrease-key very cheap, ideal when urgency changes often.<pre>def insert(self, key):
+    x = Node(key)
+    self.roots.append(x)             # lazy: no tidying yet
+    if not self.min or key &lt; self.min.key:
+        self.min = x
+
+def extract_min(self):
+    m = self.min
+    self.roots.remove(m)
+    for c in m.children:             # children join the root list
+        c.parent, c.mark = None, False
+        self.roots.append(c)
+    self.consolidate()               # the postponed tidying
+    return m
+
+def consolidate(self):
+    slot = {}
+    for x in list(self.roots):
+        while x.degree in slot:
+            y = slot.pop(x.degree)
+            if y.key &lt; x.key:
+                x, y = y, x
+            self.roots.remove(y)
+            x.children.append(y)
+            y.parent, y.mark = x, False
+            x.degree += 1
+        slot[x.degree] = x
+    self.min = min(self.roots, key=lambda r: r.key, default=None)
+
+def decrease_key(self, x, new_key):
+    x.key = new_key
+    p = x.parent
+    if p and x.key &lt; p.key:
+        self.cut(x, p)
+        self.cascading_cut(p)
+    if x.key &lt; self.min.key:
+        self.min = x
+
+def cut(self, x, p):
+    p.children.remove(x)
+    p.degree -= 1
+    self.roots.append(x)
+    x.parent, x.mark = None, False
+
+def cascading_cut(self, y):
+    z = y.parent
+    if z:
+        if not y.mark:
+            y.mark = True
+        else:
+            self.cut(y, z)
+            self.cascading_cut(z)</pre>
+<table class="cx"><tr><th>Operation</th><th>Time (amortized)</th></tr><tr><td>Insert</td><td>O(1)</td></tr><tr><td>Decrease-key</td><td>O(1)</td></tr><tr><td>Extract-min</td><td>O(log n)</td></tr><tr><td>Space</td><td>O(n)</td></tr></table></div></div>
+<div class="card reveal"><h3>LIVE SIMULATOR · BINOMIAL vs FIBONACCI HEAP</h3>
+<div class="ctl"><button class="go" id="hins">Insert call</button><button id="hext">Extract-min (most urgent)</button>Call <select id="hid" style="font:inherit;padding:8px 14px;border-radius:999px;border:1px solid var(--outline);background:#fff"></select><button id="hdec">Decrease-key (more urgent)</button><button id="hbur">Burst of 15 mixed ops</button><button id="hclr">Clear</button></div>
+<div class="tag" style="margin-top:8px">EMERGENCY CALLS ACROSS INDIA</div><canvas class="st3 hero" id="m4d"></canvas><div class="stat" id="m4dt"></div><div class="legend"><span><i style="background:#EA4335"></i>critical call</span><span><i style="background:#F29900"></i>serious call</span><span><i style="background:#34A853"></i>routine call</span><span><i style="background:#FBBC04"></i>dispatch route from the control room</span></div><div class="hint">Drag to rotate. The tall red tower with the golden route is whatever the heap says is most urgent right now. Dispatch it and the heap picks the next one.</div>
+<div class="tag" style="margin-top:18px">THE SAME CALLS AS HEAPS</div>
+<div class="cols"><div><h3 style="font-size:12.5px;letter-spacing:.1em;color:var(--primary)">BINOMIAL HEAP</h3><canvas class="st3 sm" id="h3b"></canvas><div class="stat" id="bhst"></div><div class="pch">PYTHON</div><div class="pc" id="pcBH"></div></div>
+<div><h3 style="font-size:12.5px;letter-spacing:.1em;color:var(--primary)">FIBONACCI HEAP</h3><canvas class="st3 sm" id="h3f"></canvas><div class="stat" id="fhst"></div><div class="pch">PYTHON</div><div class="pc" id="pcFH"></div></div></div>
+<div class="legend"><span><i style="background:#EA4335"></i>critical (urgency &lt; 100)</span><span><i style="background:#F29900"></i>serious (&lt; 200)</span><span><i style="background:#34A853"></i>routine (200+)</span><span>glowing halo + “min” = most urgent</span><span>white ring = tree root</span><span>red ring (Fibonacci) = node already lost a child</span></div><div class="hint">Drag to rotate. Lower number = more urgent. Work = comparisons + links + swaps + cuts. A decrease-key changes a call’s colour.</div><div class="tag" style="margin-top:16px">HEAD-TO-HEAD · AVERAGE WORK PER OPERATION</div><canvas class="sim" id="hcmp" width="900" height="210"></canvas>
+<table class="cx" id="htab" style="margin-top:12px"></table><div class="verdict" id="hvd">Insert some calls, dispatch the most urgent, then make one more urgent. Both heaps get exactly the same operations.</div></div>
+</div></section></div>
+<footer>Algorithm 2035 · Design and Analysis of Algorithms · Team: [add team names] · Guide: [add guide name]</footer></main>
+<script src="js/core/helpers.js"></script>
+<script src="js/core/intro.js"></script>
+<script src="js/core/router.js"></script>
+<script src="js/data/india-geo.js"></script>
+<script src="js/scene/world.js"></script>
+<script src="js/scene/stage-helpers.js"></script>
+<script src="js/scene/roads-stage.js"></script>
+<script src="js/scene/zones-stage.js"></script>
+<script src="js/scene/puzzle-stage.js"></script>
+<script src="js/scene/limits-stage.js"></script>
+<script src="js/modules/roads.js"></script>
+<script src="js/modules/budget.js"></script>
+<script src="js/algorithms/shared-cores.js"></script>
+<script src="js/modules/zones.js"></script>
+<script src="js/modules/puzzle.js"></script>
+<script src="js/modules/limits-growth.js"></script>
+<script src="js/modules/selector.js"></script>
+<script src="js/algorithms/data-structures.js"></script>
+<script src="js/modules/data.js"></script>
+<script src="js/scene/hero-india.js"></script>
+<script src="js/modules/data-maps.js"></script>
+<script src="js/modules/selector-tiles.js"></script>
+<script src="js/modules/feasibility.js"></script>
+</body></html>

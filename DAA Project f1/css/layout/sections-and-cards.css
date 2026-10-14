@@ -1,0 +1,12 @@
+/* css/layout/sections-and-cards.css */
+.pg section{padding:0 56px 70px;background:transparent}.pg>#flow,#flow{padding:60px 56px 70px;background:#ffffffe6}.wrap{max-width:1150px;margin:auto}
+.ph{padding:64px 56px 34px;min-height:44vh;display:flex;flex-direction:column;justify-content:center}.ph .display{max-width:12em}
+.pg>.wrap,.pg section .wrap{position:relative}
+h2{font-size:clamp(28px,3.6vw,46px);letter-spacing:-.03em;line-height:1.08;margin-bottom:8px;font-weight:500}h2 span{color:var(--primary)}
+.tag{color:var(--primary);font-weight:600;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px}.lead{color:var(--ink2);max-width:700px;margin:10px 0 30px;font-size:17px}
+.card{background:var(--surface);border-radius:28px;padding:26px;margin-bottom:22px;transition:background .3s}
+.card h3{font-size:12.5px;letter-spacing:.1em;color:var(--primary);margin-bottom:12px;font-weight:600}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}.cols4{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.cols4 .card{margin:0}.cols4 .card b{display:block;font-size:34px;color:var(--primary);font-weight:500;line-height:1.1;margin-bottom:6px}
+pre{background:#fff;border:1px solid var(--outline);border-radius:16px;padding:16px;overflow:auto;font:12.5px/1.6 "Roboto Mono",ui-monospace,Consolas,monospace;color:var(--b)}
+table.cx{width:100%;border-collapse:collapse;font-size:14px}.cx td,.cx th{border-bottom:1px solid var(--outline);padding:8px;text-align:left}.cx th{color:var(--ink2);font-weight:600}

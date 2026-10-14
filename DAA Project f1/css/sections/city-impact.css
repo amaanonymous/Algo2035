@@ -1,0 +1,11 @@
+/* css/sections/city-impact.css */
+/* ---- city impact sections ---- */
+.cityimpact{padding-top:8px}.cflow{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;counter-reset:s}
+.cflow>div{background:#fff;border:1px solid var(--outline);border-radius:20px;padding:16px 16px 14px;position:relative;font-size:14px}
+.cflow>div:before{counter-increment:s;content:counter(s);position:absolute;top:-12px;left:14px;width:24px;height:24px;border-radius:50%;background:var(--primary);color:#fff;display:grid;place-items:center;font-size:12px;font-weight:600}
+.cflow>div:not(:last-child):after{content:"\2192";position:absolute;right:-13px;top:50%;transform:translateY(-50%);color:var(--primary);font-size:18px;z-index:2;background:var(--surface);border-radius:50%;line-height:1;padding:1px}
+.cflow b{display:block;font-size:12px;letter-spacing:.08em;color:var(--primary);margin-bottom:4px}
+.cchips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}.cchips span{background:#fff;border:1px solid var(--outline);border-radius:999px;padding:6px 13px;font-size:13px}
+.cityimpact .card p+p{margin-top:8px}.cityimpact .mchips{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}
+@media(max-width:860px){.cflow>div:not(:last-child):after{display:none}}
+

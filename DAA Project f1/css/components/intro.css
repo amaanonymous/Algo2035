@@ -1,0 +1,13 @@
+/* css/components/intro.css */
+#intro{position:fixed;inset:0;z-index:100;background:#fff;display:flex;flex-direction:column;justify-content:center;padding:0 8vw;transition:opacity .6s,transform .6s}
+#intro.leaving{opacity:0;transform:scale(1.06);pointer-events:none}
+#igrid{position:absolute;inset:0;display:grid;grid-template-columns:repeat(32,1fr);align-content:center;gap:0;opacity:.55;pointer-events:none}
+#igrid i{display:block;width:6px;height:6px;border-radius:50%;background:var(--g2);margin:20px auto}
+#intro>*:not(#igrid){position:relative}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:var(--surface);font-size:13px;color:var(--ink2);font-weight:500;align-self:flex-start;text-transform:none;letter-spacing:0}
+.ititle{font-size:clamp(46px,10vw,150px);line-height:.95;letter-spacing:-.04em;font-weight:600;margin:22px 0;font-variation-settings:"wght" 600,"wdth" 100,"opsz" 144}
+.ch{display:inline-block;opacity:0;transform:translateY(.4em);animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards}.ititle .d{color:var(--g2)}
+@keyframes rise{to{opacity:1;transform:none}}
+.isub{color:var(--ink2);font-size:18px;max-width:34em}.icta{display:flex;gap:16px;align-items:center;margin-top:30px}.icta span{color:var(--ink2);font-size:13px}
+kbd{border:1px solid var(--outline);border-radius:6px;padding:1px 7px;background:var(--surface)}
+.rip{position:fixed;width:20px;height:20px;margin:-10px;border-radius:50%;background:var(--g2);z-index:110;pointer-events:none;animation:rip .9s ease-out forwards}@keyframes rip{to{transform:scale(160);opacity:0}}

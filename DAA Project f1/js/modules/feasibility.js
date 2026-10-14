@@ -1,0 +1,8 @@
+// js/modules/feasibility.js
+/* Limits: feasibility board */
+const FZ=[['Connect sites','Prim / Kruskal · E log V',n=>n*(n-1)/2*Math.log2(n)],['Zone-to-zone costs','Floyd-Warshall · n³',n=>n**3],['Split-able budget','Fractional knapsack · n log n',n=>n*Math.log2(n)],['All-or-nothing budget','0/1 knapsack DP · n·W (W = 10,000)',n=>n*1e4],['Inspection tour, smart','Held-Karp DP · n²·2ⁿ',n=>n*n*2**n],['Inspection tour, brute force','Try every order · n!',n=>{let f=1;for(let i=2;i<=n;i++)f*=i;return f}],['Conflict-free sensors','Backtracking worst case · n!',n=>{let f=1;for(let i=2;i<=n;i++)f*=i;return f}]];
+function fzT(s){if(s<1e-3)return'instant';if(s<1)return Math.round(s*1000)+' ms';if(s<60)return s.toFixed(1)+' sec';if(s<3600)return Math.round(s/60)+' min';if(s<86400)return Math.round(s/3600)+' hours';if(s<3.15e7)return Math.round(s/86400)+' days';const y=s/3.15e7;if(y>1.4e10)return'longer than the universe';return(y<1e6?Math.round(y).toLocaleString():y.toExponential(1).replace('e+','×10^'))+' years'}
+function fzR(){const n=+$('#fzn').value;$('#fznv').textContent=n;let ok=0;$('#fz').innerHTML=FZ.map(([t,f,fn])=>{const st=fn(n),s=st/1e9,k=s<=60?'ok':s<=86400?'slow':'wall',L=Math.max(-6,Math.min(18,Math.log10(Math.max(s,1e-9)))),w=Math.max(3,(L+6)/24*100);if(k=='ok')ok++;
+ return`<div class="fzc ${k}"><small>${f}</small><h4>${t}</h4><div class="tm">${fzT(s)}</div><div class="br"><i style="width:${w}%"></i></div><span class="st">${k=='ok'?'Practical':k=='slow'?'Needs planning':'Hits the wall'}</span></div>`}).join('');
+ $('#fsum').innerHTML=`<b style="font-size:inherit;color:inherit">${ok} of ${FZ.length}</b> tasks practical at n = ${n}`}
+$('#fzn').oninput=fzR;fzR();

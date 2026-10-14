@@ -1,0 +1,4 @@
+/* css/layout/responsive.css */
+@media(max-width:860px){.hero{grid-template-columns:1fr;padding:40px 22px}.ph,.stats,.tiles,.pg section,#flow{padding-left:22px;padding-right:22px}
+.rail{top:auto;right:0;width:auto;height:64px;flex-direction:row;padding:6px 8px;border-right:0;border-top:1px solid var(--outline)}.mark,.mt{display:none}.links{flex-direction:row;gap:0;overflow-x:auto;overflow-y:hidden}.dest{width:64px;font-size:10px}.page{margin:0 0 64px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}

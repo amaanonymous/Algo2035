@@ -1,0 +1,11 @@
+/* css/layout/rail-and-page.css */
+.rail{position:fixed;left:0;top:0;bottom:0;width:92px;z-index:50;background:#fff;display:flex;flex-direction:column;align-items:center;padding:18px 0 18px;gap:6px;border-right:1px solid var(--outline)}
+.mark{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:var(--tone);color:var(--on-tone);font-weight:700;margin-bottom:12px;text-decoration:none}
+.links{display:flex;flex-direction:column;gap:8px;overflow-y:auto;flex:1}
+.dest{display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--ink2);font-size:11.5px;font-weight:500;width:80px;text-decoration:none}
+.dest .ind{width:56px;height:32px;border-radius:16px;display:grid;place-items:center;transition:background .25s}.dest svg{width:22px;height:22px}
+.dest:hover .ind{background:var(--surface2)}.dest[aria-current=page]{color:var(--ink)}.dest[aria-current=page] .ind{background:var(--tone);color:var(--on-tone)}.dest.soon{opacity:.5}
+.mt{background:none;border:0;cursor:pointer;font-size:11px;color:var(--ink2);display:flex;flex-direction:column;align-items:center;gap:4px}
+.mt .sw2{width:34px;height:18px;border-radius:9px;background:var(--primary);position:relative;transition:.25s}.mt .sw2:after{content:"";position:absolute;right:3px;top:3px;width:12px;height:12px;border-radius:50%;background:#fff;transition:.25s}
+body.nomo .mt .sw2{background:var(--outline)}body.nomo .mt .sw2:after{right:19px}
+.page{margin-left:92px;position:relative;z-index:1}
