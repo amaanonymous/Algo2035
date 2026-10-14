@@ -1,0 +1,4 @@
+/* css/components/buttons.css */
+.btn{border:0;padding:0 26px;height:48px;border-radius:999px;cursor:pointer;font:inherit;font-weight:500;font-size:15px;transition:background .2s,box-shadow .2s;display:inline-flex;align-items:center;text-decoration:none}
+.btn.primary{background:var(--primary);color:#fff}.btn.primary:hover{background:var(--b);box-shadow:0 4px 14px #18408055}
+.btn.tonal{background:var(--tone);color:var(--on-tone)}.btn.tonal:hover{background:#b7c6df}

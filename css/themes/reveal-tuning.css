@@ -1,0 +1,9 @@
+/* css/themes/reveal-tuning.css */
+/* faster scroll reveals: start earlier, shorter and lighter */
+.reveal{transform:perspective(1000px) translateY(40px) rotateX(10deg) scale(.97);transition:opacity .8s ease-out,transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.tile.reveal,.stat2.reveal{transition:opacity .8s ease-out,transform .9s cubic-bezier(.2,.7,.2,1),background .3s,box-shadow .3s}
+.tile.reveal.done,.stat2.reveal.done{transition:transform .3s,background .3s,box-shadow .3s}
+canvas.st3{transform:perspective(1200px) translateY(30px) scale(.97);transition:opacity .85s ease-out,transform 1s cubic-bezier(.2,.7,.2,1)}
+canvas.st3.in{opacity:1;transform:none}
+

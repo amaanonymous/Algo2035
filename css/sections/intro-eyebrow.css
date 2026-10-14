@@ -1,0 +1,6 @@
+/* css/sections/intro-eyebrow.css */
+/* intro eyebrow */
+.ieye{display:inline-flex;align-items:center;gap:12px;align-self:flex-start;padding:9px 18px 9px 14px;border-radius:999px;border:1px solid #2c2c2e;background:linear-gradient(90deg,#0a1a33,#0b0b0d);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#a1a1a6;font-weight:500}
+.ieye i{width:8px;height:8px;border-radius:50%;background:#2997ff;box-shadow:0 0 0 4px #2997ff29,0 0 14px #2997ff88}
+.ieye em{width:1px;height:14px;background:#424245}.ieye b{color:#2997ff;font-weight:600;letter-spacing:.16em}
+@media(max-width:600px){.ieye{font-size:10.5px;letter-spacing:.1em;gap:9px;padding:8px 14px 8px 12px}}

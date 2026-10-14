@@ -1,0 +1,7 @@
+/* css/base/reset-and-root.css */
+:root{--primary:#184080;--tone:#ced9ea;--on-tone:#0d1f3b;--g2:#3460a8;--ink:#1a1b1d;--ink2:#595a5c;--surface:#f3f3f4;--surface2:#e6e7e8;--outline:#d8d9db;--bg:#fff;--a:#184080;--line:#d8d9db;--tx:#1a1b1d;--mut:#595a5c;--b:#0d1f3b;--soft:#f3f3f4}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{background:#fff;color:var(--ink);font:15px/1.55 "Roboto Flex",system-ui,Segoe UI,Roboto,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.nomo *{animation:none!important;transition:none!important}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0;transition:opacity .6s}#bg.dim{opacity:.5}
+#prog{position:fixed;top:0;left:0;height:3px;width:0;background:var(--primary);z-index:60}
